@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f5eee7;
+    font-family:"Manrope",sans-serif;
+
+}
+
+.container{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* ---------------- ЛЕВАЯ ЧАСТЬ ---------------- */
+
+.content{
+
+    width:65%;
+    padding:60px 70px 80px;
+
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+
+    font-size:13px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    color:#a78c78;
+    margin-bottom:35px;
+
+}
+
+/* Заголовок */
+
+h1{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:68px;
+    font-weight:500;
+    color:#43332c;
+
+}
+
+.line{
+
+    width:120px;
+    height:1px;
+    background:#ccb7a3;
+    margin:18px 0 30px;
+
+}
+
+.intro{
+
+    max-width:760px;
+
+    font-size:17px;
+    line-height:1.9;
+
+    color:#5f4f45;
+
+    margin-bottom:55px;
+
+}
+
+/* ---------------- ГАЛЕРЕЯ ---------------- */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+/* Карточки */
+
+.card{
+
+    background:#fbf8f5;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.card img{
+
+    width:100%;
+    height:330px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/* Большая карточка */
+
+.large{
+
+    grid-column:1/3;
+
+}
+
+.large img{
+
+    height:470px;
+
+}
+
+/* Подпись только у первой фотографии */
+
+.caption{
+
+    padding:18px 22px 22px;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+    color:#6d5a4f;
+
+    text-align:center;
+
+}
+
+/* ---------------- ПРАВАЯ ПАНЕЛЬ ---------------- */
+
+.right{
+
+    width:35%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f5eee7;
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+    border-left:1px solid rgba(190,170,150,.25);
+
+}
+
+/* ---------------- МЕНЮ ---------------- */
+
+nav{
+
+    width:300px;
+
+}
+
+nav a{
+
+    display:block;
+
+    padding:22px 0;
+
+    border-bottom:1px solid #d8c5b5;
+
+    text-decoration:none;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    color:#4d3b31;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:#b47d5d;
+
+    padding-left:18px;
+
+}
+
+nav a.active{
+
+    color:#b47d5d;
+
+    padding-left:18px;
+
+}
+
+/* ---------------- АДАПТАЦИЯ ---------------- */
+
+@media(max-width:1200px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.content{
+
+    width:100%;
+    padding:40px;
+
+}
+
+.right{
+
+    width:100%;
+    position:relative;
+    height:auto;
+    padding:50px 0;
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.large{
+
+    grid-column:auto;
+
+}
+
+.large img{
+
+    height:330px;
+
+}
+
+}

@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f5eee7;
+    font-family:"Manrope",sans-serif;
+    color:#4f4038;
+
+}
+
+.container{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* ---------- ЛЕВАЯ ЧАСТЬ ---------- */
+
+.content{
+
+    width:65%;
+    padding:60px 70px 90px;
+
+}
+
+/* Назад */
+
+.back{
+
+    display:inline-block;
+
+    margin-bottom:45px;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    color:#8d715f;
+
+    transition:.3s;
+
+}
+
+.back:hover{
+
+    color:#b07d5d;
+    padding-left:8px;
+
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+
+    font-size:13px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#a78c78;
+
+    margin-bottom:30px;
+
+}
+
+/* Заголовок */
+
+h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:72px;
+
+    font-weight:500;
+
+    color:#43332c;
+
+}
+
+/* Тематика */
+
+.theme{
+
+    margin-top:18px;
+
+    color:#b07d5d;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* Линия */
+
+.line{
+
+    width:120px;
+
+    height:1px;
+
+    background:#ccb7a3;
+
+    margin:30px 0 45px;
+
+}
+
+/* ---------- ТЕКСТ ---------- */
+
+.poem{
+
+    max-width:760px;
+
+    white-space:pre-wrap;
+
+    font-size:22px;
+
+    line-height:2.15;
+
+    color:#4f4038;
+
+}
+
+/* Буквица */
+
+.poem::first-letter{
+
+    float:left;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:82px;
+
+    line-height:.8;
+
+    padding-right:10px;
+
+    color:#7f5b48;
+
+}
+
+/* Дата */
+
+.date{
+
+    margin-top:55px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    color:#9d8778;
+
+    text-transform:uppercase;
+
+}
+
+/* ---------- ПРАВАЯ ПАНЕЛЬ ---------- */
+
+.right{
+
+    width:35%;
+
+    background:#f5eee7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+    border-left:1px solid rgba(190,170,150,.25);
+
+}
+
+/* Меню */
+
+nav{
+
+    width:300px;
+
+}
+
+nav a{
+
+    display:block;
+
+    padding:22px 0;
+
+    border-bottom:1px solid #d8c5b5;
+
+    text-decoration:none;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    color:#4d3b31;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:#b47d5d;
+
+    padding-left:18px;
+
+}
+
+nav a.active{
+
+    color:#b47d5d;
+
+    padding-left:18px;
+
+}
+
+/* ---------- АДАПТАЦИЯ ---------- */
+
+@media(max-width:1200px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.content{
+
+    width:100%;
+    padding:40px;
+
+}
+
+.right{
+
+    width:100%;
+    position:relative;
+    height:auto;
+    padding:50px 0;
+
+}
+
+.poem{
+
+    font-size:19px;
+
+}
+
+h1{
+
+    font-size:52px;
+
+}
+
+}

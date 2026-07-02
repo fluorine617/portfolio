@@ -210,3 +210,63 @@ nav a:hover{
     }
 
 }
+/* ================= МОБИЛЬНАЯ ВЕРСИЯ ================= */
+
+@media (max-width: 900px) {
+
+    body{
+        overflow:auto;
+    }
+
+    .container{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left{
+        height:auto;
+    }
+
+    .photo{
+        height:55vh;
+        background-position:center 25%;
+    }
+
+    .info{
+        left:30px;
+        bottom:30px;
+    }
+
+    .info h1{
+        font-size:48px;
+        line-height:1;
+    }
+
+    .info p{
+        font-size:15px;
+        letter-spacing:4px;
+    }
+
+    .right{
+        height:auto;
+        padding:40px 35px 60px;
+        justify-content:flex-start;
+        align-items:flex-start;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav a{
+        width:100%;
+        font-size:28px;
+        padding:18px 0;
+    }
+
+}

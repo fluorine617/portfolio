@@ -4,7 +4,7 @@ padding:0;
 box-sizing:border-box;
 }
 
-body{
+body{https://github.com/fluorine617/portfolio/edit/main/contacts.css
 
 background:#f5eee7;
 
@@ -157,5 +157,27 @@ color:#b47d5d;
 color:#b47d5d;
 
 padding-left:18px;
+
+}
+@media (max-width: 900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .content,
+    .right{
+        width:100%;
+    }
+
+    .right{
+        position:relative;
+        height:auto;
+        padding:40px 35px 60px;
+    }
+
+    nav{
+        width:100%;
+    }
 
 }
